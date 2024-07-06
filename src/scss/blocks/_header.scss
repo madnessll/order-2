@@ -1,0 +1,39 @@
+.wrapper {
+}
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+}
+.header__logo {
+}
+.header__wrapper-2 {
+  display: flex;
+  gap: 100px;
+}
+.header__col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header__col-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #181718;
+}
+.header__col-descr {
+}
+.header__col-icons {
+}
+.header__col-link {
+}
+.header__btn {
+}
