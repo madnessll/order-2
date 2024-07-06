@@ -1,0 +1,83 @@
+.get {
+  padding-top: 43px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.25);
+  background: #fbfbfb;
+  padding-bottom: 50px;
+}
+.get__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #4169e1;
+  text-align: center;
+  margin-bottom: 24px;
+
+}
+.get__question {
+  color: var(--white);
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+  border-radius: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-left: 3px;
+}
+.get__descr {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #181718;
+  margin-bottom: 98px;
+}
+.get__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  margin-bottom: 30px;
+}
+.get__card {
+  position: relative;
+  width: 635px;
+  height: 127px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+  background: var(--white);
+  padding-top: 24px;
+  padding-bottom: 23px;
+  padding-left: 352px;
+  border-radius: 10px;
+}
+.get__img {
+  // margin-right: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.get__number {
+  // margin-right: 60px;
+  position: absolute;
+  left: 190px;
+  top: 0;
+}
+.get__card-wrapper {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+.get__card-name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #181718;
+  margin-bottom: 10px;
+}
+.get__card-descr {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #181718;
+}
