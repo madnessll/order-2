@@ -18,39 +18,129 @@
           </div>
           <div class="header__wrapper-2">
             <div class="header__col">
-              <div class="header__col-name">Москва</div>
-              <div class="header__col-descr">проспект Мира 105</div>
+              <div class="header__col-name header__col-name--geo">Москва</div>
+              <div class="header__col-descr header__col-descr--adress">проспект Мира 105</div>
             </div>
             <div class="header__col">
-              <div class="header__col-name">Пн - Сб</div>
+              <div class="header__col-name header__col-name--time">Пн - Сб</div>
               <div class="header__col-descr">с 9:00 до 18:00</div>
             </div>
-            <div class="header__col">
-              <a href="tel:+74951339255" class="header__col-name">+7 495 133 92 55</a>
-              <a href="tel:+79652841315" class="header__col-name">+7 965 284 14 15</a>
+            <div class="header__col header__col--phones">
+              <a href="tel:+74951339255" class="header__col-name header__col-name--phone">+7 495 133 92 55</a>
+              <a href="tel:+79652841315" class="header__col-name header__col-name--phone">+7 965 284 14 15</a>
             </div>
             <div class="header__col">
-              <div class="header__col-name">info@lider-garant.ru</div>
+              <div class="header__col-name header__col-name--mail">
+                <a href="mailto:info@lider-garant.ru" class="header__col-name-link">info@lider-garant.ru</a>
+              </div>
               <div class="header__col-icons">
-                <a href="#" class="header__col-link">
-                  <img src="" alt="whatsapp">
+                <a href="#" class="header__col-link header__col-link--whatsapp">
+                  <img src="./img/header/whatsapp.svg" alt="whatsapp">
                 </a>
-                <a href="#" class="header__col-link">
-                  <img src="" alt="tg">
+                <a href="#" class="header__col-link header__col-link--tg">
+                  <img src="./img/header/tg.svg" alt="tg">
                 </a>
-                <a href="#" class="header__col-link">
-                  <img src="" alt="vk">
+                <a href="#" class="header__col-link header__col-link--vk">
+                  <img src="./img/header/vk.svg" alt="vk">
                 </a>
-                <a href="#" class="header__col-link">
-                  <img src="" alt="ok">
+                <a href="#" class="header__col-link header__col-link--ok">
+                  <img src="./img/header/ok.svg" alt="ok">
                 </a>
               </div>
             </div>
           </div>
-          <button class="header__btn">Обратный звонок</button>
+          <button class="header__btn btn">Обратный звонок</button>
         </div>
       </div>
     </header>
+    <div class="container">
+      <div class="line"></div>
+    </div>
+    <section class="main">
+      <div class="container">
+        <nav class="main__nav">
+          <ul class="main__ul">
+            <li class="main__li"><a href="#" class="mail__li-link">О компании</a></li>
+            <li class="main__li"><a href="#" class="mail__li-link">Акредитация СРО</a></li>
+            <li class="main__li"><a href="#" class="mail__li-link">Прайс-лист</a></li>
+            <li class="main__li"><a href="#" class="mail__li-link">Акции</a></li>
+            <li class="main__li"><a href="#" class="mail__li-link">Гарантии</a></li>
+            <li class="main__li"><a href="#" class="mail__li-link">Стать представителем</a></li>
+          </ul>
+        </nav>
+        <div class="main__nav-wrapper">
+          <ul class="main__ul-2">
+            <li class="main__li-2"><a href="#" class="main__li-2-link">Кредит для бизнеса</a></li>
+            <li class="main__li-2"><a href="#" class="main__li-2-link">Банковские гарантии</a></li>
+            <li class="main__li-2"><a href="#" class="main__li-2-link">Лизинг</a></li>
+            <li class="main__li-2"><a href="#" class="main__li-2-link">Тендеры</a></li>
+            <li class="main__li-2"><a href="#" class="main__li-2-link">Юр.услуги</a></li>
+            <li class="main__li-2"><a href="#" class="main__li-2-link">Бух.услуги</a></li>
+          </ul>
+          <div class="main__input-wrapper">
+            <input class="main__input" type="text" placeholder="Поиск по сайту">
+            <button class="main__input-btn"><img src="./img/main/search.svg" alt="search" class="main__input-img"></button>
+          </div>
+        </div>
+        <div class="main__wrapper-3">
+          <div class="main__left">
+            <h1 class="main__title">Помогаем получить кредит <span class="gray">для любого бизнеса</span><br> без залога</h1>
+            <div class="main__form">
+              <div class="main__form-name">Получите прямо сейчас <span class="blue">кредит онлайн</span></div>
+              <div class="main__form-descr">Заполните форму и мы свяжемся с Вами в ближайшее время!</div>
+              <div class="main__form-grid">
+                <input class="main__form-input" type="text" placeholder="Вид деятельности" name="activity">
+                <input class="main__form-input" type="text" placeholder="Укажите сумму" name="amount">
+                <input class="main__form-input" type="text" placeholder="Укажите вид кредита" name="credit-type">
+                <input class="main__form-input" type="text" placeholder="Введите ИНН компании" name="inn">
+                <input class="main__form-input" type="email" placeholder="Электронная почта" name="email">
+                <input class="main__form-input" type="text" placeholder="Ваше Имя" name="name">
+                <input class="main__form-input" type="tel" placeholder="Ваш номер телефона" name="phone">
+              </div>
+              <button class="main__form-btn btn">Оставить заявку</button>
+              <label class="main__form-label" for="consent">
+                <input class="main__form-checkbox" type="checkbox" name="consent" id="consent"> Даю согласие на обработку персональных данных
+            </label>
+            </div>
+          </div>
+          <div class="main__right">
+            <div class="main__right-wrapper">
+              <div class="main__right-cards">
+                <div class="main__right-card">
+                  <div class="main__right-card-name"><span class="up">ТОП-20</span> ведущих банков РФ</div>
+                  <div class="main__right-card-descr">наши партнеры</div>
+                </div>
+                <div class="main__right-card">
+                  <div class="main__right-card-name">от <span class="up">3 млн</span> до <span class="up">5 млрд ₽</span></div>
+                  <div class="main__right-card-descr">на любые цели</div>
+                </div>
+                <div class="main__right-card">
+                  <div class="main__right-card-name"><span class="up">Очень высокий процент</span></div>
+                  <div class="main__right-card-descr">одобрений</div>
+                </div>
+                <div class="main__right-card">
+                  <div class="main__right-card-name"><span class="up">Все регионы РФ</span></div>
+                  <div class="main__right-card-descr">включая Крым, СКФО</div>
+                </div>
+                <div class="main__right-card">
+                  <div class="main__right-card-name"><span class="up">Без предоплаты</span></div>
+                  <div class="main__right-card-descr">работаем по договору</div>
+                </div>                                                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+  <section class="best">
+    <div class="container">
+      <h2 class="best__title">Работаем с ведущими специалистами кредитных отделов, что обеспечивает одобрение кредитов для ООО и ИП в 90% заявок</h2>
+      <div class="best__wrapper">
+        <div class="best__exclusive">У нас эксклюзивные условия в банках
+        Некоторые банки давно сотрудничают с ними, что позволяет говорить об особых условиях совместной работы</div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

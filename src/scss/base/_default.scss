@@ -69,10 +69,21 @@
 :root {
   --font-family: "Gilroy", sans-serif;
   --second-family: "Bebas Neue", sans-serif;
+  --white: #fff;
 }
 .container {
   max-width: 1320px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+}
+.btn {
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+  color: var(--white);
+  transition: all 1s ease;
+  border-radius: 10px;
+  font-family: var(--font-family);
+  &:hover {
+    background: linear-gradient(34deg, #2648af 0%, #1b3667 100%);
+  }
 }
