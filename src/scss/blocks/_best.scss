@@ -182,6 +182,7 @@
 }
 
 .bid__label {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,6 +193,7 @@
   color: var(--white);
 }
 .bid__checkbox {
+  cursor: pointer;
   margin: 0;
   padding: 0;
   -webkit-appearance: none;

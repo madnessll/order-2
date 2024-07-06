@@ -461,6 +461,7 @@ input {
 }
 
 .bid__label {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,6 +473,7 @@ input {
 }
 
 .bid__checkbox {
+  cursor: pointer;
   margin: 0;
   padding: 0;
   -webkit-appearance: none;
@@ -512,6 +514,175 @@ input {
   bottom: 0;
   right: 0;
   z-index: 1;
+}
+
+.financing {
+  padding-bottom: 50px;
+}
+
+.financing__wrapper {
+  background: linear-gradient(135deg, #4169e1 0%, #4169e1 100%);
+  border-radius: 10px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.financing__title {
+  text-align: center;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 26px;
+}
+
+.financing__title-btn {
+  background: var(--white);
+  color: #104D87;
+  border-radius: 10px;
+  padding: 2px 14px;
+}
+
+.financing__cards {
+  max-width: 957px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.financing__card {
+  position: relative;
+  border-radius: 10px;
+  width: 312px;
+  height: 163px;
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+.financing__card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.financing__card-descr {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--white);
+}
+
+.financing__card-btn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #4169e1;
+  margin-top: auto;
+  background: var(--white);
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.financing__card-btn:hover {
+  color: var(--white);
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+}
+
+.financing__card-img {
+  z-index: 5;
+  position: absolute;
+  right: 11px;
+  top: 14px;
+}
+
+.financing__card:hover {
+  background: var(--white);
+}
+
+.financing__card:hover .financing__card-descr {
+  color: #4169e1;
+}
+
+.financing__card:hover .financing__card-btn {
+  color: var(--white);
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+}
+
+.financing__card:hover .financing__card-img {
+  background-image: url("../../img/financing/wallet-blue.svg");
+}
+
+.financing__card-img {
+  background-image: url("../../img/financing/wallet.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.financing__button-next {
+  position: absolute;
+  right: 41px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.financing__button-prev {
+  position: absolute;
+  left: 41px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.financing__cash-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.financing__cash-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.financing__wrapper {
+  position: relative;
+}
+
+.financing__finger {
+  position: absolute;
+  bottom: 92px;
+  left: 100px;
+}
+
+.finansing__know {
+  text-align: center;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: right;
+  color: var(--white);
 }
 
 .header {
@@ -647,6 +818,10 @@ input {
   font-size: 14px;
   line-height: 100%;
   color: #181718;
+  transition: all 0.5s ease;
+}
+.mail__li-link:hover {
+  font-weight: 700;
 }
 
 .main__nav-wrapper {
@@ -674,6 +849,10 @@ input {
   font-size: 14px;
   line-height: 100%;
   color: var(--white);
+  transition: all 0.5s ease;
+}
+.main__li-2-link:hover {
+  font-size: 15px;
 }
 
 .main__input {
@@ -787,6 +966,7 @@ input {
 }
 
 .main__form-label {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -797,6 +977,7 @@ input {
 }
 
 .main__form-checkbox {
+  cursor: pointer;
   margin: 0;
   padding: 0;
   -webkit-appearance: none;
