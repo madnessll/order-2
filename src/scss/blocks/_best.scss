@@ -1,0 +1,40 @@
+.best {
+  padding-top: 94px;
+}
+.best__title {
+  font-family: var(--second-family);
+  font-size: 40px;
+  line-height: 120%;
+  color: #4169e1;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.best__gray {
+  font-weight: 400;
+  color: #929292;
+}
+.best__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background: #fbfbfb;
+  border-radius: 10px;
+  padding: 48px 20px 40px 20px;
+}
+.best__exclusive {
+  max-width: 475px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #181718;
+}
+.best__blue {
+  font-weight: 700;
+  color: #4169e1;
+}
+.best__banks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
