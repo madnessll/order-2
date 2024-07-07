@@ -1,0 +1,98 @@
+.advantages {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.25);
+  background: #fbfbfb;
+  border-radius: 40px;
+}
+.advantages__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #4169e1;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 22px;
+}
+.advantages__title-wrapper {
+  position: relative;
+  z-index: 5;
+}
+.advantages__back {
+  position: absolute;
+  right: -70px;
+  bottom: 0;
+  z-index: 2;
+}
+.advantages__up {
+  position: absolute;
+  right: 0;
+  bottom: -56px;
+  z-index: 6;
+}
+.advantages__btn {
+  font-weight: 400;
+  color: var(--white);
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.advantages__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #181718;
+  margin-bottom: 84px;
+}
+.advantages__subtitle-wrapper {
+  margin: 0 auto;
+  max-width: 559px;
+}
+.advantages__cards {
+  display: flex;
+  gap: 10px;
+}
+.advantages__card {
+  width: 420px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 70px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(141deg, #1b3667 0%, #4169e1 47.4%, #1b3667 100%);
+}
+.advantages__card-img {
+  position: absolute;
+  top: -55px;
+}
+.advantages__card-name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.advantages__card-descr {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--white);
+}
+.advantages__card-descr-bold {
+  font-weight: 600;
+}
