@@ -57,13 +57,6 @@
     width: 20px;
     height: 20px;
   }
-  // &--phone:nth-child(1) {
-  //   align-items: end;
-  // }
-  // &--phone:nth-child(2) {
-  //   margin-top: -17px;
-  //   align-items: end;
-  // }
   &--mail:before {
     content: url('../../img/header/mail.svg');
     margin-top: 3px;
@@ -104,4 +97,91 @@
 .line {
   height: 0px;
   border: 1px solid #cfcfcf;
+}
+.header__container {
+  position: relative;
+}
+.header__mobphone1 {
+  position: absolute;
+  top: 36px;
+  right: 80px;
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+.header__mobphone2 {
+  padding: 130px;
+  position: absolute;
+  right: 130px;
+  top: 36px;
+  display: none;
+  background-size: 30px;
+  padding: 0;
+}
+.burger {
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: 41px;
+  z-index: 6;
+  align-items: center;
+  width: 32px;
+  height: 22px;
+  cursor: pointer;
+}
+.burger span {
+  height: 2px;
+  width: 100%;
+  transform: scale(1);
+  background-color: #4169e1;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #4169e1;
+  // transition: all 0.3s ease 0s;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger.active span {
+  transform: scale(0);
+}
+.burger.active:before {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(45deg);
+}
+.burger.active:after {
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-45deg);
+}
+// //////////////////////////////////////////////////////////////////
+@media(max-width: 1160px) {
+  .header__wrapper-2 {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .header__mobphone1, .header__mobphone2 {
+    display: block;
+  }
+  .header__logo img {
+    width: 110px;
+    height: 71px;
+  }
+  .header {
+    padding-top: 16px;
+  }
 }
