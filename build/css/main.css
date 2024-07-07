@@ -774,6 +774,11 @@ input {
     display: block;
   }
 }
+@media (max-width: 879px) {
+  .best {
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 679px) {
   .bid__right-img {
     display: none;
@@ -1140,9 +1145,13 @@ input {
   border-radius: 10px;
   padding-top: 44px;
   padding-bottom: 44px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .financing__title {
+  position: relative;
+  z-index: 10;
   text-align: center;
   font-family: var(--second-family);
   font-weight: 700;
@@ -1160,15 +1169,6 @@ input {
   padding: 2px 14px;
 }
 
-.financing__cards {
-  max-width: 957px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 34px;
-}
-
 .financing__card {
   position: relative;
   border-radius: 10px;
@@ -1180,6 +1180,7 @@ input {
   flex-direction: column;
   transition: all 1s ease;
   z-index: 2;
+  margin: 5px;
 }
 
 .financing__card-content {
@@ -1245,9 +1246,11 @@ input {
   height: 30px;
 }
 
-.swiper {
+.slick-slider {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 10 !important;
 }
 
 .financing__button-next {
@@ -1271,6 +1274,7 @@ input {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+  z-index: 1;
 }
 
 .financing__cash-right {
@@ -1278,6 +1282,7 @@ input {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  z-index: 1;
 }
 
 .financing__wrapper {
@@ -1288,9 +1293,12 @@ input {
   position: absolute;
   bottom: 92px;
   left: 100px;
+  z-index: 10;
 }
 
 .finansing__know {
+  position: relative;
+  z-index: 100;
   text-align: center !important;
   font-family: var(--second-family);
   font-weight: 400;
@@ -1300,6 +1308,103 @@ input {
   color: var(--white);
 }
 
+.slick-slide {
+  margin: 0 20px; /* Измените отступы между слайдами на 20 пикселей */
+}
+
+@media (max-width: 1311px) {
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+  }
+}
+@media (max-width: 1021px) {
+  .financing__wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .swiper-slide {
+    width: unset;
+  }
+  .financing__finger {
+    display: none;
+  }
+}
+@media (max-width: 938px) {
+  .financing__wrapper {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .swiper-slide {
+    width: unset;
+  }
+  .slick-slide {
+    margin: 0 44px;
+  }
+}
+@media (max-width: 885px) {
+  .financing__wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .financing__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .finansing__know {
+    font-size: 22px;
+  }
+  .financing__card {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  .financing__card-descr {
+    font-size: 16px;
+  }
+  .financing__title-btn {
+    display: inline-block;
+  }
+  .financing__button-prev {
+    position: relative;
+  }
+  .financing__button-next {
+    position: relative;
+    margin-right: 20px;
+  }
+  .financing__btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 90px;
+    margin-bottom: -27px;
+    margin-left: 23px;
+  }
+}
+@media (max-width: 452px) {
+  .financing__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .slick-slide {
+    margin-left: 31px;
+    margin-right: 31px;
+  }
+  .financing__btns {
+    margin-left: 19px;
+  }
+  .financing__cash-right, .financing__cash-left {
+    display: none;
+  }
+  .financing__cash-mini {
+    display: inline-block;
+    width: 120%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-26px);
+  }
+  .financing__wrapper {
+    overflow: hidden;
+  }
+}
 .footer {
   background: linear-gradient(137deg, #4169e1 0%, #4169e1 27.01%, #1b3667 100%);
   padding-top: 34px;

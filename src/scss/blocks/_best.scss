@@ -286,6 +286,11 @@
     display: block;
   }
 }
+@media (max-width: 879px) {
+  .best {
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 679px) {
   .bid__right-img {
     display: none;
@@ -380,4 +385,5 @@
     left: 0;
     bottom: 0;
   }
+
 }
