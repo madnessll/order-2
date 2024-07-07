@@ -704,6 +704,154 @@ input {
   z-index: 1;
 }
 
+.choose {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.25);
+  background: #fbfbfb;
+  border-radius: 40px;
+}
+
+.choose__wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.choose__title {
+  font-family: var(--second-family);
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  color: #4169e1;
+  width: 596px;
+  margin-bottom: 20px;
+}
+
+.choose__title-btn {
+  font-weight: 400;
+  color: var(--white);
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+  border-radius: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.choose__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #181718;
+  max-width: 411px;
+  margin-bottom: 20px;
+}
+
+.choose__bold {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.choose__more {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #4169e1;
+  max-width: 268px;
+  margin-bottom: 15px;
+}
+
+.choose__item {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #181718;
+}
+
+.choose__item {
+  position: relative;
+  padding-left: 20px; /* Добавляем отступ слева для маркера */
+}
+
+.choose__item::before {
+  margin-top: 4px;
+  content: "•"; /* Используем символ точки */
+  position: absolute;
+  left: 0;
+  font-size: 23px; /* Устанавливаем размер точки */
+  line-height: 1; /* Устанавливаем межстрочный интервал */
+  color: black; /* Устанавливаем цвет точки */
+}
+
+.choose__right {
+  position: relative;
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+  border-radius: 10px;
+  padding: 31px 75px 149px 75px;
+}
+
+.choose__right-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.choose__input {
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.choose__input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #9e9e9e;
+  text-align: center;
+}
+
+.choose__btn {
+  width: 100%;
+  height: 39px;
+  background: var(--white);
+  border-radius: 10px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #4169e1;
+  margin-bottom: 18px;
+}
+
+.choose__list-left {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+}
+
+.choose__list-right {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+}
+
+.choose__board {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
 .financing {
   padding-bottom: 50px;
 }
