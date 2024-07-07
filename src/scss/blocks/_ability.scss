@@ -70,3 +70,39 @@
     max-width: 518px;
   }
 }
+// ///////////////////////////////////////////////////////////////////
+@media (max-width: 1219px) {
+  .ability__img {
+    display: none;
+  }
+  .ability__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media(max-width:691px) {
+  .ability__title {
+    font-size: 22px;
+    width: unset;
+    padding: 5px 17px;
+    margin-bottom: 10px;
+  }
+  .ability__cards {
+    grid-template-columns: 1fr;
+}
+.ability__card {
+    width: unset;
+}
+.ability__card--span2 {
+    grid-column: unset;
+}
+.ability__card-name{
+  font-size: 16px;
+}
+.ability__card {
+  padding: 15px;
+}
+.ability__card-descr {
+  font-size: 13px;
+}
+}
