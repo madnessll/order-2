@@ -1,0 +1,68 @@
+.ability {
+  background: url('../../img/ability/cash-bg.png') center / cover no-repeat;
+  background-position: center -130px;
+}
+.ability__wrapper {
+  display: flex;
+  gap: 10px;
+}
+.ability__left {
+}
+.ability__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: var(--white);
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+  text-align: center;
+  margin-bottom: 84px;
+
+}
+.ability__img {
+}
+.ability__right {
+
+}
+.ability__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.ability__card {
+  width: 312px;
+  position: relative;
+  background: #fbfbfb;
+  border-radius: 10px;  
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 20px;
+  &--span2{
+    grid-column: span 2;
+    width: 100%;
+  }
+}
+.ability__card-name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #181718;
+  margin-bottom: 10px;
+}
+.ability__card-img {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.ability__card-descr {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #181718;
+  &--width {
+    max-width: 518px;
+  }
+}
