@@ -1,0 +1,50 @@
+.cities {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.cities__wrapper {
+  position: relative;
+}
+.cities__title {
+ 
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  background: linear-gradient(135deg, #4169e1 0%, #1b3667 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cities__subtile {
+  position: absolute;
+  top: 147px;
+  left: 50%; /* Располагает текст по горизонтали в центре */
+  transform: translateX(-50%); /* Центрует текст по горизонтали */
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--white);
+}
+
+.text-container {
+  position: absolute;
+  top: 73px;
+  left: 50%; /* Располагает текст по горизонтали в центре */
+  transform: translateX(-50%); /* Центрует текст по горизонтали */
+  background-color: white; /* Белый фон для контейнера */
+  border-radius: 10px; /* Скругляем углы контейнера, если нужно */
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+.cities__check {
+  position: absolute;
+  left: 50%; /* Располагает текст по горизонтали в центре */
+  transform: translateX(-50%); /* Центрует текст по горизонтали */
+  top: -50px;
+}
