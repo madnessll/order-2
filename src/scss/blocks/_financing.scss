@@ -2,6 +2,7 @@
   padding-bottom: 50px;
 }
 .financing__wrapper {
+  
   background: linear-gradient(135deg, #4169e1 0%, #4169e1 100%);
   border-radius: 10px;
   padding-top: 44px;
@@ -131,6 +132,7 @@
 }
 .financing__wrapper {
   position: relative;
+
 }
 .financing__finger {
   position: absolute;
@@ -138,7 +140,7 @@
   left: 100px;
 }
 .finansing__know {
-  text-align: center;
+  text-align: center !important;
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 40px;

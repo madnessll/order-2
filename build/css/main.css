@@ -1291,7 +1291,7 @@ input {
 }
 
 .finansing__know {
-  text-align: center;
+  text-align: center !important;
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 40px;
