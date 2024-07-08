@@ -28,3 +28,8 @@ $('.financing__swiper').slick({
         }
     ]
 });
+// ////////////////////////////////////////////////////////////////////////////////////
+document.querySelector('.burger').addEventListener('click',function(){
+    this.classList.toggle('active');
+    document.querySelector('.mobile-menu').classList.toggle('open');
+})
