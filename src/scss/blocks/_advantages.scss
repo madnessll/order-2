@@ -120,6 +120,7 @@
 @media(max-width:821px){
   .advantages {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   .advantages__title {
     font-size: 22px;
@@ -151,4 +152,38 @@
   .advantages__card-img {
     top: -28px;
   }
+  .advantages__card {
+    padding-top: 35px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .advantages__card-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .advantages__card-descr {
+    font-size: 13px;
+  }
+}
+@media (max-width: 505px) {
+  .advantages__up {
+    right: 101px;
+}
+.advantages__back {
+    right: 42px;
+}
+}
+@media (max-width: 453px) {
+  .advantages__card {
+    width: 100%;
+  }
+}
+@media (max-width: 387px) {
+  .advantages__up {
+    right: 37px;
+}
+.advantages__back {
+    right: -17px;
+}
 }

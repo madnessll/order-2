@@ -264,3 +264,13 @@
      overflow: hidden;
   }
 }
+@media (max-width:379px) {
+  .slick-slide {
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+  .financing__card {
+    width: 281px; 
+    margin-right: 4px;
+  }
+}

@@ -136,3 +136,16 @@
   transform: translateX(-50%);
   bottom: 0;
 }
+// //////////////////////////////////////////////////////////////////////
+@media (max-width: 1175px) {
+  .choose__right {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .choose .drop {
+    display: block;
+  }
+  .choose .clear {
+    display: none;
+  }
+}

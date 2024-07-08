@@ -525,6 +525,7 @@ input {
 @media (max-width: 821px) {
   .advantages {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
   .advantages__title {
     font-size: 22px;
@@ -555,6 +556,40 @@ input {
   }
   .advantages__card-img {
     top: -28px;
+  }
+  .advantages__card {
+    padding-top: 35px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .advantages__card-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .advantages__card-descr {
+    font-size: 13px;
+  }
+}
+@media (max-width: 505px) {
+  .advantages__up {
+    right: 101px;
+  }
+  .advantages__back {
+    right: 42px;
+  }
+}
+@media (max-width: 453px) {
+  .advantages__card {
+    width: 100%;
+  }
+}
+@media (max-width: 387px) {
+  .advantages__up {
+    right: 37px;
+  }
+  .advantages__back {
+    right: -17px;
   }
 }
 .best {
@@ -1176,6 +1211,18 @@ input {
   bottom: 0;
 }
 
+@media (max-width: 1175px) {
+  .choose__right {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .choose .drop {
+    display: block;
+  }
+  .choose .clear {
+    display: none;
+  }
+}
 .cities {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -1500,6 +1547,16 @@ input {
   }
   .financing__wrapper {
     overflow: hidden;
+  }
+}
+@media (max-width: 379px) {
+  .slick-slide {
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+  .financing__card {
+    width: 281px;
+    margin-right: 4px;
   }
 }
 .footer {
@@ -2462,6 +2519,8 @@ input {
 }
 
 .offer__work {
+  position: relative;
+  z-index: 2;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 20px;
@@ -2474,6 +2533,8 @@ input {
   display: flex;
   gap: 10px;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .offer__get {
@@ -2489,6 +2550,7 @@ input {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 
 .offer__items {
@@ -2575,6 +2637,57 @@ input {
   color: #4169e1;
 }
 
+.offer__get--last {
+  margin-bottom: 0;
+}
+
+@media (max-width: 863px) {
+  .offer {
+    padding-top: 23px;
+    padding-bottom: 20px;
+  }
+  .offer__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .offer__wrapper {
+    padding: 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .offer__work {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .offer__get {
+    font-size: 14px;
+  }
+  .offer__img img {
+    width: 17px;
+    height: 20px;
+    margin-top: -3px;
+  }
+  .offer__get-wrapper {
+    align-items: unset;
+  }
+  .offer__img-bg {
+    top: 0;
+  }
+  .offer__items {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .offer__item {
+    gap: 10px;
+  }
+  .offer__item-descr {
+    font-size: 14px;
+  }
+  .offer__btn {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+}
 .spec {
   padding-top: 55px;
   padding-bottom: 100px;
