@@ -48,3 +48,38 @@
   transform: translateX(-50%); /* Центрует текст по горизонтали */
   top: -50px;
 }
+// /////////////////////////////////////
+@media (max-width: 1319px) {
+  .cities__img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .cities__img img{
+    width: 100%;
+  }
+}
+@media (max-width: 902px) {
+  .cities {
+    padding-top: 45px;
+  }
+  .cities__check {
+    width: 50px;
+    top: -25px;
+  }
+  .cities__title {
+    font-size: 22px;
+  }
+  .text-container {
+    top: 44px;
+  }
+  .cities__subtile {
+    top: 85px;
+    font-size: 14px;
+  }
+}
+@media (max-width:398px) {
+  .text-container {
+    white-space: nowrap;
+
+  }
+}

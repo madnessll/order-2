@@ -639,7 +639,8 @@
           <h2 class="choose__title clear"><span class="choose__title-btn">Выбираем предложение</span> и получаем кредит по наиболее выгодному предложению</h2>
           <h3 class="choose__subtitle"><span class="choose__bold">Обратитесь к профессионалам</span>
             еще до того, как многочисленные запросы и отказы снизят ваш кредитный рейтинг до безнадежного уровня!</h3>
-          <div class="choose__more">Дополнительные продукты, <br> которые мы предлагаем:</div>
+          <div class="choose__more-wrapper">
+            <div class="choose__more">Дополнительные продукты, <br> которые мы предлагаем:</div>
           <ul class="choose__list">
             <li class="choose__item">лизинг</li>
             <li class="choose__item">банковские гарантии</li>
@@ -647,6 +648,7 @@
             <li class="choose__item">готовые компании</li>
             <li class="choose__item">тендерное сопровождение</li>
           </ul>
+          </div>
         </div>
         <div class="choose__right">
           <div class="choose__right-title"><span class="choose__bold">Скачать прайс</span> со всеми услугами Вы можете просто <span class="choose__bold">заполнив форму</span></div>
@@ -663,10 +665,16 @@
       </div>
     </div>
   </section>
-  <!-- <section class="cities">
+  <section class="cities">
     <div class="container">
       <div class="cities__wrapper">
-        <img src="./img/cities/map.jpg" alt="map" class="cities__img">
+        <div class="cities__img-wrapper">
+          <!-- <img src="./img/cities/map.jpg" alt="map" class="cities__img"> -->
+          <picture class='cities__img'>
+            <source media="(max-width: 706px)" srcset="./img/cities/map-mini.jpg">
+            <img src="./img/cities/map.jpg" alt="map">
+          </picture>
+        </div>
         <div class="text-container">
           <h2 class="cities__title">ВАШ КРЕДИТ ОДОБРЕН!</h2>
         </div>
@@ -674,8 +682,8 @@
         <img src="./img/cities/check.svg" alt="check" class="cities__check">
       </div>
     </div>
-  </section> -->
-  <!-- <div class="card">
+  </section>
+  <div class="card">
     <div class="container">
       <div class="card__container">
               <div class="card__logo">
@@ -691,8 +699,8 @@
         <span class="p600">— Георгий.</span> Лидер-Гарант</div>
       </div>
     </div>
-  </div> -->
-  <!-- <footer class="footer">
+  </div>
+  <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__left">
@@ -748,8 +756,66 @@
           </div>
         </div>
       </div>
+      <div class="footer__mini">
+        <div class="footer__logo footer__logo-mini">
+          <img src="./img/footer/logo.png" alt="logo">
+        </div>
+        <div class="footer__mini-wrapper">
+            <div class="footer__list">
+              <div class="footer__name footer__name--1">О компании</div>
+            <ul class="footer__ul">
+              <li class="footer__li"><a href="#">Вакансии</a></li>
+              <li class="footer__li"><a href="#">Контакты</a></li>
+              <li class="footer__li"><a href="#">Аккредитация</a></li>
+            </ul>
+          </div>
+          <div class="footer__list footer__list--right">
+            <div class="footer__name footer__name--2">Информация</div>
+            <ul class="footer__ul footer__ul--right">
+              <li class="footer__li"><a href="#">FAQ</a></li>
+              <li class="footer__li"><a href="#">Как сделать заказ</a></li>
+              <li class="footer__li"><a href="#">Акции</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__mini-wrapper-2">
+          <div class="footer__list">
+            <div class="footer__name footer__name--3">Дополнительно</div>
+            <ul class="footer__ul">
+              <li class="footer__li"><a href="#">Прайс-лист</a></li>
+              <li class="footer__li"><a href="#">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__mini-wrapper5">
+          <div class="footer__time-date"><span class="bold">Пн - Сб:</span> с 9:00 до 18:00</div>
+            <div class="footer__geo"><span class="bold">Москва,</span> проспект Мира 105 </div>
+        </div>
+        <div class="footer__email footer__email-mini"><a href="mailto:info@lider-garant.ru">info@lider-garant.ru</a></div>
+        <div class="footer__mini-wrapper3">
+          <div class="footer__number">
+              <a href="tel:+74951339255">+7 495 133 92 55</a>
+            </div>
+            <div class="footer__number">
+              <a href="tel:+79652841415">+7 965 284 14 15</a>
+            </div>
+        </div>
+        <div class="footer__mini-wrapper3">
+          <div class="footer__soc">
+              <img src="./img/footer/whats.svg" alt="whats">
+              <img src="./img/footer/tg.svg" alt="tg">
+              <img src="./img/footer/vk.svg" alt="vk">
+              <img src="./img/footer/ok.svg" alt="ok">
+            </div>
+            <button class="footer__btn">Обратный звонок</button>
+        </div>
+        <div class="footer__mini-wrapper4">
+          <div class="footer__text">2024 © “Лидер - Гарант”</div>
+          <a href="#" class="footer__left-link">Политика конфиденциальности</a>
+      </div>
+        </div>
     </div>
-  </footer> -->
+  </footer>
   <script src="./js/index.bundle.js"></script>
 </body>
 </html>
