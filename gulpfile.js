@@ -11,8 +11,8 @@ gulp.task(
       "html:dev",
       "sass:dev",
       "images:dev",
-      "fonts:dev",
-      "files:dev",
+      // "fonts:dev",
+      // "files:dev",
       "js:dev"
     ),
     gulp.parallel("server:dev", "watch:dev")
@@ -27,8 +27,8 @@ gulp.task(
       "html:docs",
       "sass:docs",
       "images:docs",
-      "fonts:docs",
-      "files:docs",
+      // "fonts:docs",
+      // "files:docs",
       "js:docs"
     ),
     gulp.parallel("server:docs")

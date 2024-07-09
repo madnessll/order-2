@@ -7,7 +7,7 @@
   padding-bottom: 32px;
   background: var(--white);
   border-radius: 10px;
-  background: url('../../img/card/card-bg.png');
+  background: url('../../img/card/card-bg.png') ;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -80,5 +80,10 @@
 @media (max-width: 360px) {
   .card__btn {
     padding: 20px 53px;
+  }
+}
+@media (max-width:535px) {
+  .card {
+    overflow: hidden
   }
 }

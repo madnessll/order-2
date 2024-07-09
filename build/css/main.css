@@ -731,6 +731,11 @@ input {
   background: #f5f5f5;
   padding: 12px 20px;
   border-radius: 10px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #9e9e9e;
 }
 .bid__input::placeholder {
   font-family: var(--font-family);
@@ -1096,6 +1101,11 @@ input {
     padding: 20px 53px;
   }
 }
+@media (max-width: 535px) {
+  .card {
+    overflow: hidden;
+  }
+}
 .choose {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -1200,6 +1210,12 @@ input {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 10px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #9e9e9e;
+  text-align: center;
 }
 .choose__input::placeholder {
   font-family: var(--font-family);
@@ -1703,6 +1719,10 @@ input {
   gap: 37px;
 }
 
+.footer__mini {
+  display: none;
+}
+
 .footer__logo {
   margin-bottom: 36px;
 }
@@ -1886,6 +1906,9 @@ input {
 @media (max-width: 1324px) {
   .footer__wrapper {
     display: none;
+  }
+  .footer__mini {
+    display: block;
   }
   .footer__mini-wrapper {
     display: flex;
@@ -2105,6 +2128,10 @@ input {
     display: none;
   }
 }
+.burger {
+  display: none;
+}
+
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2417,6 +2444,11 @@ input {
   outline: none;
   width: 269px;
   border: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #929292;
 }
 .main__input::placeholder {
   font-family: var(--font-family);
@@ -2495,6 +2527,11 @@ input {
   background: #f5f5f5;
   padding: 12px 20px;
   border-radius: 10px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #9e9e9e;
 }
 .main__form-input::placeholder {
   font-family: var(--font-family);
@@ -2723,7 +2760,7 @@ input {
   .main__bg-mini {
     display: block;
     position: absolute;
-    top: 0px;
+    top: 120px;
     right: -28px;
   }
   .main__right {
@@ -2731,6 +2768,11 @@ input {
   }
   .main {
     padding-bottom: 0;
+  }
+}
+@media (max-width: 536px) {
+  .main__bg-mini {
+    right: 0;
   }
 }
 .offer {

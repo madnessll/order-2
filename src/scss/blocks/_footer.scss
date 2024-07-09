@@ -7,6 +7,9 @@
   display: flex;
   gap: 37px;
 }
+.footer__mini {
+  display: none;
+}
 .footer__left {
 }
 .footer__logo {
@@ -186,6 +189,9 @@
 @media(max-width: 1324px) {
   .footer__wrapper {
     display: none;
+  }
+  .footer__mini {
+    display: block;
   }
 
   .footer__mini-wrapper {

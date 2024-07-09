@@ -2,14 +2,14 @@ const gulp = require("gulp");
 
 // html
 const fileInclude = require("gulp-file-include");
-const htmlclean = require("gulp-htmlclean");
+// const htmlclean = require("gulp-htmlclean");
 const webpHTML = require("gulp-webp-html");
 
 // sass
 const sass = require("gulp-sass")(require("sass"));
 const sassGlob = require("gulp-sass-glob");
 const autoprefixer = require("gulp-autoprefixer");
-const csso = require("gulp-csso");
+// const csso = require("gulp-csso");
 const webpCss = require("gulp-webp-css");
 
 
@@ -58,7 +58,6 @@ gulp.task("html:docs", function () {
     .src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
     .pipe(changed("./docs/"))
     .pipe(plumber(plumberNotify("HTML")))
-    .pipe(fileInclude(fileIncludeSetting))
     .pipe(
       replace(
         /(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
@@ -66,9 +65,15 @@ gulp.task("html:docs", function () {
       )
     )
     .pipe(webpHTML())
-    .pipe(htmlclean())
+    // .pipe(htmlclean())
     .pipe(gulp.dest("./docs/"));
 });
+
+// gulp.task("html:docs", function () {
+//   return gulp
+//     .src("./src/html/**/*.html")
+//     .pipe(gulp.dest("./docs/"));
+// });
 
 gulp.task("sass:docs", function () {
   return gulp
@@ -84,7 +89,7 @@ gulp.task("sass:docs", function () {
         "$1./$4$5$7$1"
       )
     )
-    .pipe(csso())
+    // .pipe(csso())
     .pipe(gulp.dest("./docs/css/"));
 });
 
@@ -92,7 +97,7 @@ gulp.task("images:docs", function () {
   return (
     gulp
       // .src("./src/img/**/*", { encoding: false })
-      .src(["./src/img/**/*", "!./src/img/svgicons/**/*"])
+      .src(["./src/img/**/*", "!./src/img/svgicons/**/*"], { encoding: false })
       .pipe(changed("./docs/img"))
       .pipe(
         imagemin([
@@ -126,12 +131,12 @@ gulp.task("fonts:docs", function () {
     .pipe(gulp.dest("./docs/fonts/"));
 });
 
-gulp.task("files:docs", function () {
-  return gulp
-    .src("./src/files/**/*")
-    .pipe(changed("./docs/files/"))
-    .pipe(gulp.dest("./docs/files/"));
-});
+// gulp.task("files:docs", function () {
+//   return gulp
+//     .src("./src/files/**/*")
+//     .pipe(changed("./docs/files/"))
+//     .pipe(gulp.dest("./docs/files/"));
+// });
 
 gulp.task("js:docs", function () {
   return gulp
