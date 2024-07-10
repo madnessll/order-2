@@ -76,21 +76,18 @@ gulp.task("html:docs", function () {
 // });
 
 gulp.task("sass:docs", function () {
-  return gulp
-    .src("./src/scss/*.scss")
-    .pipe(changed("./docs/css/"))
-    .pipe(plumber(plumberNotify("SASS")))
-    .pipe(sassGlob())
-    .pipe(sass())
-    .pipe(autoprefixer())
-    .pipe(
-      replace(
-        /(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
-        "$1./$4$5$7$1"
-      )
-    )
-    // .pipe(csso())
-    .pipe(gulp.dest("./docs/css/"));
+  return (
+    gulp
+      .src("./src/scss/*.scss")
+      .pipe(changed("./docs/css/"))
+      .pipe(plumber(plumberNotify("SASS")))
+      .pipe(sassGlob())
+      .pipe(sass())
+      .pipe(autoprefixer())
+      .pipe(replace(/(?<=url\(['"]?)(\.\.\/)+img\//g, "../img/"))
+      // .pipe(csso())
+      .pipe(gulp.dest("./docs/css/"))
+  );
 });
 
 gulp.task("images:docs", function () {

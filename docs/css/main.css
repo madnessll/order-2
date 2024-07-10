@@ -287,7 +287,7 @@ input {
 }
 
 .ability {
-  background: url("../../img/ability/cash-bg.png") center/cover no-repeat;
+  background: url("../img/ability/cash-bg.png") center/cover no-repeat;
 }
 
 .ability__wrapper {
@@ -1112,7 +1112,7 @@ input {
   padding-bottom: 32px;
   background: var(--white);
   border-radius: 10px;
-  background: url("../../img/card/card-bg.png");
+  background: url("../img/card/card-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1703,11 +1703,11 @@ input {
 }
 
 .financing__card:hover .financing__card-img {
-  background-image: url("../../img/financing/wallet-blue.svg");
+  background-image: url("../img/financing/wallet-blue.svg");
 }
 
 .financing__card-img {
-  background-image: url("../../img/financing/wallet.svg");
+  background-image: url("../img/financing/wallet.svg");
   width: 30px;
   height: 30px;
 }
@@ -2035,7 +2035,7 @@ input {
   color: var(--white);
 }
 .footer__time-date ::before {
-  content: url("../../img/footer/time.svg");
+  content: url("../img/footer/time.svg");
 }
 
 .footer__geo {
@@ -2053,7 +2053,7 @@ input {
   color: var(--white);
 }
 .footer__geo ::before {
-  content: url("../../img/footer/geo.svg");
+  content: url("../img/footer/geo.svg");
 }
 
 .bold {
@@ -2093,7 +2093,7 @@ input {
 }
 
 .footer__email ::before {
-  content: url("../../img/footer/mail.svg");
+  content: url("../img/footer/mail.svg");
 }
 
 .footer__last {
@@ -2122,7 +2122,7 @@ input {
   color: var(--white);
 }
 .footer__number a:before {
-  content: url("../../img/footer/phone.svg");
+  content: url("../img/footer/phone.svg");
 }
 
 .footer__soc {
@@ -2495,14 +2495,14 @@ input {
   margin-bottom: 17px;
 }
 .header__col-name--geo:before {
-  content: url("../../img/header/geo.svg");
+  content: url("../img/header/geo.svg");
 }
 .header__col-name--time:before {
-  content: url("../../img/header/time.svg");
+  content: url("../img/header/time.svg");
 }
 .header__col-name--phone:before {
   content: "";
-  background-image: url("../../img/header/phone.svg");
+  background-image: url("../img/header/phone.svg");
   position: absolute;
   left: -25px;
   bottom: 1px;
@@ -2510,7 +2510,7 @@ input {
   height: 20px;
 }
 .header__col-name--mail:before {
-  content: url("../../img/header/mail.svg");
+  content: url("../img/header/mail.svg");
   margin-top: 3px;
 }
 
@@ -2892,7 +2892,7 @@ input {
             align-items: center;
   }
   .mobile-menu__info--moskow:before {
-    content: url("../../img/header/geo.svg");
+    content: url("../img/header/geo.svg");
     margin-top: 2px;
     margin-right: 4px;
   }
@@ -2905,7 +2905,7 @@ input {
             align-items: center;
   }
   .mobile-menu__info--days:before {
-    content: url("../../img/mobile-menu/alarm.svg");
+    content: url("../img/mobile-menu/alarm.svg");
     margin-right: 4px;
   }
   .mobile-menu__number {
@@ -2918,7 +2918,7 @@ input {
             align-items: center;
   }
   .mobile-menu__number:before {
-    content: url("../../img/mobile-menu/phone.svg");
+    content: url("../img/mobile-menu/phone.svg");
     margin-right: 7px;
     margin-top: 5px;
   }
@@ -2938,7 +2938,7 @@ input {
 }
 .wrapper {
   position: relative; /* Для позиционирования псевдоэлемента */
-  background: url("../../img/main/main-bg.jpg") center/cover no-repeat;
+  background: url("../img/main/main-bg.jpg") center/cover no-repeat;
   background-position: center 14%;
   border-radius: 10px;
   border-radius: 0px 0px 40px 40px;
