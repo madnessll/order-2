@@ -181,11 +181,11 @@
     z-index: 300;
   }
   .burger.active span {
-  background-color: #4169e1;;
+  background-color: #4169e1;
 }
 .burger.active::before,
 .burger.active::after {
-  background-color: #4169e1;;
+  background-color: #4169e1;
   // transition: all 0.3s ease 0s;
 }
   .header__mobphone1, .header__mobphone2 {
@@ -199,6 +199,7 @@
     padding-top: 16px;
   }
   .mobile-menu.open {
+    
     display: flex;
     flex-direction: column;
     position: fixed;
